@@ -13,7 +13,7 @@ body {
 }
 
 .container{
-    padding: 10px;
+    padding: 1em;
     margin: 0 auto;
 }
 
@@ -22,21 +22,20 @@ header {
 }
 
 main{
-    padding: 10px;
+    padding: 1em;
 }
 
 #accordion{
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 500px;
+    max-width: 30em;
 }
 
 #accordion li{
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     background: #fff;
-    max-width: 500px;
     padding: 1px;
 }
 
@@ -49,6 +48,7 @@ main{
 .link{
     display: block;
     text-decoration: none;
+    cursor: auto;
 }
 
 @media screen and (min-width: 820px){
@@ -66,7 +66,7 @@ main{
 }
 
 #accordion li label{
-    padding: 10px;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,39 +79,39 @@ main{
 }
 
 #accordion .content{
-    padding: 0 10px;
-    line-height: 26px;
+    padding: 0 1em;
+    line-height: 1.5em;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s;
 }
 
 .icon{
-    width: 16px;
+    width: 1em;
     height: 0;
     transition: height 0.5s;
 }
 
 ul:hover .icon{
     background: transparent url(./assets/plus.svg) no-repeat;
-    height: 16px;
+    height: 1em;
 }
 
 #accordion .link:hover .icon{
     background: transparent url(./assets/ic.svg) no-repeat;
-    height: 16px;
+    height: 1em;
 }
 
 #accordion li:hover .content{
-    max-height: 500px;
+    max-height: 30em;
 }
 
 #accordion label + input[type="radio"]:checked + .content{
-    max-height: 500px;
+    max-height: 30em;
 }
 
 .meme{
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 30em;
 }
