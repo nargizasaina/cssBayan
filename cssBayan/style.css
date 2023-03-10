@@ -4,10 +4,69 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    color: #3e3f3f;
+    color: #fff;
     background: #4C1130;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.3;
     margin: 0;
     font-weight: 500;
+}
+
+.container{
+    padding: 10px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+main{
+    padding: 10px;
+}
+
+#accordion{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 500px;
+}
+
+#accordion li{
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #fff;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: yellowgreen;
+}
+
+#accordion label + input[type="radio"]{
+    display: none;
+}
+
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease;
+}
+
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 100%;
+}
+
+.meme{
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
