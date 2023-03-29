@@ -62,7 +62,7 @@ main{
 }
 
 .link:active{
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 #accordion li label{
